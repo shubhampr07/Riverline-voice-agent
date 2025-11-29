@@ -1,0 +1,11 @@
+{
+  "trunk": {
+    "name": "Customer Support",
+    "address": "testriverline.pstn.twilio.com",
+    "numbers": [
+      "+19892822468"
+    ],
+    "auth_username": "shubhampr07",
+    "auth_password": "Shubham@2025"
+  }
+}
