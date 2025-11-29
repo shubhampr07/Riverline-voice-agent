@@ -95,7 +95,11 @@ async function handleCallSubmit(e) {
 async function initiateCall(formData) {
     const metadata = {
         phone_number: formData.phone_number,
-        trunk_id: formData.trunk_id
+        trunk_id: formData.trunk_id,
+        customer_name: formData.customer_name,
+        amount_due: formData.amount_due,
+        due_date: formData.due_date,
+        summary: formData.summary
     };
     
     // Call the Flask backend API

@@ -203,12 +203,18 @@ async def entrypoint(ctx: JobContext):
 
     participant_identity = phone_number
 
+    # ---- EXTRACT CUSTOMER DATA FROM METADATA ----
+    customer_name = dial_info.get("customer_name", "Alex")
+    amount_due = dial_info.get("amount_due", "1000.00")
+    due_date = dial_info.get("due_date", "Unknown")
+    summary = dial_info.get("summary", "No past conversation")
+
     # ---- AGENT INSTANCE ----
     agent = OutboundCaller(
-        name="Jack",
-        amount_due="125.00",
-        due_date="May 25, 2025",
-        summary="No past conversation",
+        name=customer_name,
+        amount_due=amount_due,
+        due_date=due_date,
+        summary=summary,
         today=datetime.now().strftime("%B %d, %Y"),
         dial_info=dial_info,
     )

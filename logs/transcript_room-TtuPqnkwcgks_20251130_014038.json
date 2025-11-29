@@ -1,0 +1,113 @@
+{
+  "transcript": {
+    "items": [
+      {
+        "id": "item_cf730338752b",
+        "type": "agent_handoff",
+        "new_agent_id": "outbound_caller"
+      },
+      {
+        "id": "item_f12bc41df9ef",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hello?"
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.88793945,
+        "extra": {},
+        "metrics": {
+          "transcription_delay": 0.0,
+          "on_user_turn_completed_delay": 1.7005950212478638e-06
+        }
+      },
+      {
+        "id": "item_bc7915cb24f5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hi there! Am I speaking with Testing? This is Joe calling from American Express. I'm just calling to follow up on your account, as it looks like there's an outstanding payment of $1250 that was due on November 29th. Is now a good time to chat for a moment?\n"
+        ],
+        "interrupted": false,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764446956.9891212,
+          "stopped_speaking_at": 1764446974.1303666,
+          "llm_node_ttft": 0.9346531983464956,
+          "tts_node_ttfb": 0.33503769896924496
+        }
+      },
+      {
+        "id": "item_f8b7dbdf314b",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "No. I will not pay. This is not my pay."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.98291016,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764446975.953998,
+          "stopped_speaking_at": 1764446977.452805,
+          "transcription_delay": 0.665924072265625,
+          "end_of_turn_delay": 0.6670763492584229,
+          "on_user_turn_completed_delay": 3.300607204437256e-06
+        }
+      },
+      {
+        "id": "item_96e1a7353332",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Oh, I'm really sorry to hear that. I understand that can be frustrating, and I definitely want to help sort this out for you. Can you tell me a bit more about why you don't believe this charge is yours?\n"
+        ],
+        "interrupted": false,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764446979.223955,
+          "stopped_speaking_at": 1764446991.3955076,
+          "llm_node_ttft": 0.76281469874084,
+          "tts_node_ttfb": 0.33974869921803474,
+          "e2e_latency": 1.7711498737335205
+        }
+      },
+      {
+        "id": "item_86b1990b3ca1",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "I don't believe in you. You are fake."
+        ],
+        "interrupted": false,
+        "transcript_confidence": 0.9980469,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764446994.8029141,
+          "stopped_speaking_at": 1764446996.4515061,
+          "transcription_delay": 0.5032293796539307,
+          "end_of_turn_delay": 0.5505962371826172,
+          "on_user_turn_completed_delay": 2.6989728212356567e-06
+        }
+      },
+      {
+        "id": "item_5ae30ed8a9b9",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "I'm truly sorry that you feel this way, and I apologize for any frustration this has caused. I can assure you that I'm a genuine representative from American Express, and my goal is simply to help you with your account.\n\nTo make sure we're on the right track, would you be open to verifying some account"
+        ],
+        "interrupted": true,
+        "extra": {},
+        "metrics": {
+          "started_speaking_at": 1764446998.5336769,
+          "stopped_speaking_at": 1764447016.205342,
+          "llm_node_ttft": 1.0117930006235838,
+          "tts_node_ttfb": 0.5184599999338388,
+          "e2e_latency": 2.0821707248687744
+        }
+      }
+    ]
+  },
+  "custom_log": []
+}

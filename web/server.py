@@ -43,7 +43,11 @@ def initiate_call():
         # Prepare metadata
         metadata = {
             "phone_number": data['phone_number'],
-            "trunk_id": data.get('trunk_id', DEFAULT_TRUNK_ID)
+            "trunk_id": data.get('trunk_id', DEFAULT_TRUNK_ID),
+            "customer_name": data.get('customer_name', 'Alex'),
+            "amount_due": data.get('amount_due', '1000.00'),
+            "due_date": data.get('due_date', ''),
+            "summary": data.get('summary', 'No past conversation')
         }
         
         # Execute lk dispatch command
