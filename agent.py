@@ -249,6 +249,19 @@ async def entrypoint(ctx: JobContext):
                 indent=2,
             )
         logger.info(f"Transcript saved to {path}")
+        
+        # ---- AUTO-ANALYZE AND SAVE PREDICTION ----
+        try:
+            from analyzer import ConversationAnalyzer
+            analyzer = ConversationAnalyzer()
+            logger.info("Running conversation analysis...")
+            analysis = await analyzer.analyze_transcript_file(path, save_prediction=True)
+            if "error" not in analysis:
+                logger.info("✅ Analysis completed and prediction saved")
+            else:
+                logger.warning(f"Analysis failed: {analysis.get('error')}")
+        except Exception as e:
+            logger.error(f"Failed to run analysis: {e}")
 
     ctx.add_shutdown_callback(write_transcript)
 
